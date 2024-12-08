@@ -1,12 +1,21 @@
 import React, { Suspense } from "react"
 import { BrowserRouter, Routes, Route, useNavigate } from "react-router-dom"
 import Title from "./components/Title"
+import { RecoilRoot } from "recoil"
 
 const Home = React.lazy(() => import("./Pages/Home")) 
 const Special = React.lazy(() => import("./Pages/Special")) 
 const AddNote = React.lazy(() => import("./Pages/AddNote")) 
 
-
+function Main(){
+  return(
+    <>
+    <RecoilRoot>
+      <App/>
+    </RecoilRoot>
+    </>
+  )
+}
 
 function App() {
   return (  
@@ -48,7 +57,7 @@ function Appbar(){
   </>
 }
 
-export default App
+export default Main
 
 //home page with all notes
 // page with some specific notes
