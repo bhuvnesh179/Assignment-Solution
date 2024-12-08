@@ -1,9 +1,10 @@
 import React, { Suspense } from "react"
 import { BrowserRouter, Routes, Route, useNavigate } from "react-router-dom"
+import Title from "./components/Title"
 
-const Home = React.lazy(() => import("./components/Home")) 
-const Special = React.lazy(() => import("./components/Special")) 
-const AddNote = React.lazy(() => import("./components/AddNote")) 
+const Home = React.lazy(() => import("./Pages/Home")) 
+const Special = React.lazy(() => import("./Pages/Special")) 
+const AddNote = React.lazy(() => import("./Pages/AddNote")) 
 
 
 
@@ -28,19 +29,20 @@ function Appbar(){
   const navigate = useNavigate();
 
   return <>
-    <div>
+    <Title label={"ShareYourThoughts"}/>
+    <div className=" p-5 my-3 ml-32 mr-32 bg-purple-300 flex justify-between border  rounded">
 
       <button onClick={() => {
         navigate("/");
-        }}> Home </button>
+        }} className="p-2 bg-pink-100 font-mono cursor-pointer border rounded"> Home </button>
 
       <button onClick={() => {
         navigate("/Special");
-      }}>Special</button>
+      }} className="p-2 bg-pink-100 font-mono cursor-pointer border rounded">Special</button>
 
       <button onClick={() => {
         navigate("/AddNote");
-      }}>AddNote</button>
+      }} className="p-2 bg-pink-100 font-mono cursor-pointer border rounded">AddNote</button>
 
     </div>
   </>
