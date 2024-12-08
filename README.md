@@ -1,8 +1,11 @@
-# React + Vite
+###
+Problem:  
+Creating a platform for users to share their thoughts and stories . 
+Develop a simple Note  application which has following: 
+- A home page with all notes 
+- A page showing specific notes 
+- An add note page  
+Showcase the use of react with hooks , routing and simple state management. 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+##
+Tailwind CSS was used for styling, and the Recoil library was used for state management.
