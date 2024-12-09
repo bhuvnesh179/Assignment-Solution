@@ -48,7 +48,7 @@ function Appbar(){
 
       <button onClick={() => {
         navigate("/Special");
-      }} className="p-2 bg-pink-100 font-mono cursor-pointer border rounded">Special</button>
+      }} className="p-2 bg-pink-100 font-mono cursor-pointer border rounded">Specific(Random story)</button>
 
       <button onClick={() => {
         navigate("/AddNote");
@@ -60,6 +60,3 @@ function Appbar(){
 
 export default Main
 
-//home page with all notes
-// page with some specific notes
-// an add note page

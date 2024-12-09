@@ -6,7 +6,7 @@ export default function AllNotes(){
     return(
         <>
         {stories.length === 0? (
-            <div className="flex justify-center font-bold text-3xl text-gray-900">I did not use any database. So, first of all, add a story..</div>
+            <div className="flex justify-center font-bold text-3xl text-gray-900">I am not using any database. So, first of all, add a story..</div>
         ):(
             <ol>
             {stories.map((story, index) => (
