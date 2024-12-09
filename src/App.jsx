@@ -19,7 +19,7 @@ function Main(){
 
 function App() {
   return (  
-    <div>
+    <div className="h-screen bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500">
       <BrowserRouter>
       <Appbar />
       <Suspense fallback={<div>Loading....</div>}>
@@ -38,8 +38,9 @@ function Appbar(){
   const navigate = useNavigate();
 
   return <>
-    <Title label={"ShareYourThoughts"}/>
-    <div className=" p-5 my-3 ml-32 mr-32 bg-purple-300 flex justify-between border  rounded">
+    <Title label={"ShareYourStory"}/>
+    <div className="p-5 my-3 mx-4 sm:mx-8 md:mx-16 lg:mx-32 bg-purple-300 flex flex-wrap justify-between border rounded">
+
 
       <button onClick={() => {
         navigate("/");
@@ -51,7 +52,7 @@ function Appbar(){
 
       <button onClick={() => {
         navigate("/AddNote");
-      }} className="p-2 bg-pink-100 font-mono cursor-pointer border rounded">AddNote</button>
+      }} className="p-2 bg-pink-100 font-mono cursor-pointer border rounded">Add a Story/Note</button>
 
     </div>
   </>
