@@ -15,7 +15,7 @@ export default function StoryInput({onAddStory}){
                 setStory('');
             }
         }}>
-            <textarea placeholder="Type your story here..." rows={15} cols={75} value={story} onChange = {e => {
+            <textarea placeholder="Type your story here..." rows={10} cols={50} value={story} onChange = {e => {
                 setStory(e.target.value);
             }} className="border rounded p-2 bg-pink-200 font-semibold focus:outline-none"/>
             <br />

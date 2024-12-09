@@ -39,7 +39,7 @@ function Appbar(){
 
   return <>
     <Title label={"ShareYourStory"}/>
-    <div className="p-5 my-3 mx-4 sm:mx-8 md:mx-16 lg:mx-32 bg-purple-300 flex flex-wrap justify-between border rounded">
+    <div className="p-5 my-3 mx-4 sm:mx-4 md:mx-8 lg:mx-32 bg-purple-300 flex  justify-around border rounded">
 
 
       <button onClick={() => {
